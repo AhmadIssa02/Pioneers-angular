@@ -1,0 +1,73 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Mark Ali ",
+      "gender": "male",
+      "contactPreference": "email",
+      "email": "mark@gmail.com",
+      "department": "3",
+      "isActive": true,
+      "photoPath": "images/mark.png",
+      "phoneNumber": "788871250"
+    },
+    {
+      "id": 2,
+      "name": "Alaa",
+      "gender": "female",
+      "contactPreference": "phone",
+      "phoneNumber": 2345978640,
+      "dateOfBirth": "1979/11/20",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "images/mary.png"
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "gender": "male",
+      "contactPreference": "phone",
+      "phoneNumber": 5432978640,
+      "dateOfBirth": "1976/3/25",
+      "department": "3",
+      "isActive": false,
+      "photoPath": "images/john.png"
+    },
+    {
+      "id": 4,
+      "name": "Bahaa",
+      "gender": "male",
+      "contactPreference": "email",
+      "phoneNumber": 795197177,
+      "dateOfBirth": "1976-01-24T22:00:00.000Z",
+      "department": "3",
+      "isActive": true,
+      "photoPath": "images/john.png",
+      "email": "baha.rashed@cloudsolutions.com.sa"
+    },
+    {
+      "name": "Bahaa Rashed",
+      "gender": "male",
+      "email": "bahaa.eska@gmail.com",
+      "phoneNumber": "0795197177",
+      "contactPreference": "email",
+      "dateOfBirth": "2024-10-28T17:23:08.000Z",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "images/john.png",
+      "id": 5
+    },
+    {
+      "name": "Bahaa Rashed 123",
+      "gender": "male",
+      "email": "bahaa.eska@gmail.com",
+      "phoneNumber": "0795197177",
+      "contactPreference": "email",
+      "dateOfBirth": "2024-10-28T17:23:08.000Z",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "images/john.png",
+      "id": 6
+    }
+  ]
+}
