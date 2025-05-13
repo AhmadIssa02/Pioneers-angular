@@ -1,1 +1,94 @@
-<p>employee-list works!</p>
+<div class="card mt-4" *ngFor="let employee of employees">
+    <div class="card-header  bg-primary">
+        {{employee.name | uppercase}}
+    </div>
+    <div class="card-body">
+        <div class="col-sm-10">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="imageClass" [src]="employee.photoPath" alt="Test">
+                </div>
+                <div class="col-sm-8">
+                                        <div class="row">
+                        <div class="col-sm-6">
+                            Id
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.id}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Gender
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.gender}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Date of Birth
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.dateOfBirth | date}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Contact Preference
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.contactPreference}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Phone
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.phoneNumber}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Email
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.email}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Department
+                        </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Is Active
+                        </div>
+                        <div class="col-sm-6">
+                            : {{employee.isActive}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                   <!--  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" [value]="employee.id" (click)="deleteEmployee()">Yes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
